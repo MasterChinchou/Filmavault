@@ -1,0 +1,351 @@
+show_id,ticket_no,film_id,film,director,director_id,genre,cinema_id,city,viewer_id,first_name,last_name,email,session,seat_no
+SHOW00149,TKT0001,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V003,Liam,Fernando,liam.fernando3@mail.com,9:45 pm,C15
+SHOW00092,TKT0002,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V012,Mason,Scott,mason.scott12@mail.com,9:45 pm,E18
+SHOW00104,TKT0003,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V003,Liam,Fernando,liam.fernando3@mail.com,9:45 pm,D4
+SHOW00057,TKT0004,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V010,Mia,Singh,mia.singh10@mail.com,7:30 pm,D7
+SHOW00051,TKT0005,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V059,Daniel,Lee,daniel.lee59@mail.com,10:00 am,D16
+SHOW00078,TKT0006,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V019,Sienna,Perera,sienna.perera19@mail.com,7:30 pm,C17
+SHOW00030,TKT0007,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V063,Noah,Lee,noah.lee63@mail.com,10:00 am,A19
+SHOW00033,TKT0008,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V020,Liam,Taylor,liam.taylor20@mail.com,7:30 pm,C16
+SHOW00052,TKT0009,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V006,Daniel,Young,daniel.young6@mail.com,1:00 pm,G2
+SHOW00077,TKT0010,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V004,Ruby,Roberts,ruby.roberts4@mail.com,1:00 pm,B19
+SHOW00023,TKT0011,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C001,Auckland,V012,Mason,Scott,mason.scott12@mail.com,7:30 pm,A6
+SHOW00155,TKT0012,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V006,Daniel,Young,daniel.young6@mail.com,1:00 pm,B19
+SHOW00136,TKT0013,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V015,Jack,Scott,jack.scott15@mail.com,9:45 pm,D20
+SHOW00050,TKT0014,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V045,Charlotte,Scott,charlotte.scott45@mail.com,7:30 pm,G20
+SHOW00105,TKT0015,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V021,Ethan,Walker,ethan.walker21@mail.com,10:00 am,F12
+SHOW00143,TKT0016,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V006,Daniel,Young,daniel.young6@mail.com,1:00 pm,F8
+SHOW00041,TKT0017,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V054,Mia,Wilson,mia.wilson54@mail.com,9:45 pm,F20
+SHOW00164,TKT0018,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V052,Liam,Scott,liam.scott52@mail.com,1:00 pm,G18
+SHOW00019,TKT0019,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V052,Liam,Scott,liam.scott52@mail.com,7:30 pm,D9
+SHOW00125,TKT0020,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V035,Grace,Walker,grace.walker35@mail.com,7:30 pm,A15
+SHOW00025,TKT0021,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V041,Sophia,Wilson,sophia.wilson41@mail.com,10:00 am,E2
+SHOW00045,TKT0022,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V016,Sienna,Perera,sienna.perera16@mail.com,7:30 pm,D9
+SHOW00032,TKT0023,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V046,Olivia,Perera,olivia.perera46@mail.com,4:00 pm,G18
+SHOW00050,TKT0024,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V009,Grace,Smith,grace.smith9@mail.com,7:30 pm,B18
+SHOW00166,TKT0025,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V018,Charlotte,Patel,charlotte.patel18@mail.com,7:30 pm,G9
+SHOW00125,TKT0026,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V047,Mason,Roberts,mason.roberts47@mail.com,7:30 pm,B10
+SHOW00130,TKT0027,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V002,Amelia,Lee,amelia.lee2@mail.com,7:30 pm,D6
+SHOW00037,TKT0028,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V065,Leo,Patel,leo.patel65@mail.com,9:45 pm,E4
+SHOW00098,TKT0029,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C004,Hamilton,V009,Grace,Smith,grace.smith9@mail.com,4:00 pm,C2
+SHOW00089,TKT0030,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V044,Olivia,Perera,olivia.perera44@mail.com,1:00 pm,G15
+SHOW00172,TKT0031,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V014,Nathan,Young,nathan.young14@mail.com,9:45 pm,C10
+SHOW00152,TKT0032,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V043,Ruby,Young,ruby.young43@mail.com,7:30 pm,A20
+SHOW00006,TKT0033,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V044,Olivia,Perera,olivia.perera44@mail.com,10:00 am,C13
+SHOW00087,TKT0034,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C001,Auckland,V039,Olivia,Brown,olivia.brown39@mail.com,9:45 pm,G7
+SHOW00001,TKT0035,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V008,Daniel,Scott,daniel.scott8@mail.com,10:00 am,F2
+SHOW00124,TKT0036,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V009,Grace,Smith,grace.smith9@mail.com,4:00 pm,A17
+SHOW00170,TKT0037,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V062,Noah,Smith,noah.smith62@mail.com,4:00 pm,G14
+SHOW00168,TKT0038,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V029,Mason,Scott,mason.scott29@mail.com,10:00 am,G13
+SHOW00146,TKT0039,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V044,Olivia,Perera,olivia.perera44@mail.com,1:00 pm,G20
+SHOW00043,TKT0040,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V052,Liam,Scott,liam.scott52@mail.com,1:00 pm,D11
+SHOW00039,TKT0041,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V027,Ava,Taylor,ava.taylor27@mail.com,1:00 pm,B13
+SHOW00170,TKT0042,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V023,Isla,Young,isla.young23@mail.com,4:00 pm,F17
+SHOW00064,TKT0043,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V048,Mason,Wilson,mason.wilson48@mail.com,1:00 pm,E20
+SHOW00151,TKT0044,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V003,Liam,Fernando,liam.fernando3@mail.com,4:00 pm,G6
+SHOW00038,TKT0045,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V022,Amelia,Brown,amelia.brown22@mail.com,10:00 am,B10
+SHOW00057,TKT0046,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V023,Isla,Young,isla.young23@mail.com,7:30 pm,A18
+SHOW00049,TKT0047,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V042,Nathan,Walker,nathan.walker42@mail.com,4:00 pm,F19
+SHOW00155,TKT0048,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V016,Sienna,Perera,sienna.perera16@mail.com,1:00 pm,B6
+SHOW00071,TKT0049,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V003,Liam,Fernando,liam.fernando3@mail.com,7:30 pm,G4
+SHOW00065,TKT0050,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V052,Liam,Scott,liam.scott52@mail.com,4:00 pm,C2
+SHOW00150,TKT0051,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V029,Mason,Scott,mason.scott29@mail.com,1:00 pm,B7
+SHOW00169,TKT0052,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V022,Amelia,Brown,amelia.brown22@mail.com,1:00 pm,A8
+SHOW00100,TKT0053,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V041,Sophia,Wilson,sophia.wilson41@mail.com,10:00 am,F13
+SHOW00081,TKT0054,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V058,Noah,Roberts,noah.roberts58@mail.com,1:00 pm,G7
+SHOW00157,TKT0055,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V069,Isla,Perera,isla.perera69@mail.com,7:30 pm,F4
+SHOW00122,TKT0056,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V065,Leo,Patel,leo.patel65@mail.com,10:00 am,D2
+SHOW00044,TKT0057,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V052,Liam,Scott,liam.scott52@mail.com,4:00 pm,E16
+SHOW00156,TKT0058,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V011,Olivia,Brown,olivia.brown11@mail.com,4:00 pm,B18
+SHOW00060,TKT0059,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V033,Daniel,Scott,daniel.scott33@mail.com,4:00 pm,D18
+SHOW00075,TKT0060,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V002,Amelia,Lee,amelia.lee2@mail.com,7:30 pm,E19
+SHOW00056,TKT0061,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V064,Amelia,Walker,amelia.walker64@mail.com,4:00 pm,C9
+SHOW00151,TKT0062,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V035,Grace,Walker,grace.walker35@mail.com,4:00 pm,F14
+SHOW00075,TKT0063,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V017,Daniel,King,daniel.king17@mail.com,7:30 pm,C17
+SHOW00068,TKT0064,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V050,Grace,Perera,grace.perera50@mail.com,10:00 am,B10
+SHOW00082,TKT0065,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V031,Leo,Young,leo.young31@mail.com,4:00 pm,G12
+SHOW00010,TKT0066,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V023,Isla,Young,isla.young23@mail.com,9:45 pm,B6
+SHOW00073,TKT0067,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V051,Mason,Smith,mason.smith51@mail.com,10:00 am,G10
+SHOW00100,TKT0068,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V030,Sienna,Scott,sienna.scott30@mail.com,10:00 am,F1
+SHOW00122,TKT0069,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V030,Sienna,Scott,sienna.scott30@mail.com,10:00 am,G2
+SHOW00034,TKT0070,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V046,Olivia,Perera,olivia.perera46@mail.com,9:45 pm,D11
+SHOW00096,TKT0071,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V036,Liam,Chen,liam.chen36@mail.com,7:30 pm,B20
+SHOW00137,TKT0072,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V053,Ava,Smith,ava.smith53@mail.com,10:00 am,B15
+SHOW00057,TKT0073,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V016,Sienna,Perera,sienna.perera16@mail.com,7:30 pm,C12
+SHOW00119,TKT0074,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V003,Liam,Fernando,liam.fernando3@mail.com,1:00 pm,C20
+SHOW00166,TKT0075,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V044,Olivia,Perera,olivia.perera44@mail.com,7:30 pm,E13
+SHOW00012,TKT0076,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C004,Hamilton,V016,Sienna,Perera,sienna.perera16@mail.com,10:00 am,G4
+SHOW00096,TKT0077,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V052,Liam,Scott,liam.scott52@mail.com,7:30 pm,D11
+SHOW00052,TKT0078,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V056,Lucas,Taylor,lucas.taylor56@mail.com,1:00 pm,G19
+SHOW00045,TKT0079,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V069,Isla,Perera,isla.perera69@mail.com,7:30 pm,B11
+SHOW00102,TKT0080,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V040,Daniel,Young,daniel.young40@mail.com,4:00 pm,B3
+SHOW00165,TKT0081,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V022,Amelia,Brown,amelia.brown22@mail.com,4:00 pm,G8
+SHOW00013,TKT0082,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C004,Hamilton,V064,Amelia,Walker,amelia.walker64@mail.com,1:00 pm,D6
+SHOW00093,TKT0083,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V006,Daniel,Young,daniel.young6@mail.com,10:00 am,G2
+SHOW00159,TKT0084,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V069,Isla,Perera,isla.perera69@mail.com,1:00 pm,B12
+SHOW00147,TKT0085,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V028,Ethan,King,ethan.king28@mail.com,4:00 pm,A20
+SHOW00065,TKT0086,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V061,Lucas,Wilson,lucas.wilson61@mail.com,4:00 pm,F5
+SHOW00040,TKT0087,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V031,Leo,Young,leo.young31@mail.com,4:00 pm,F18
+SHOW00133,TKT0088,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V013,Leo,Perera,leo.perera13@mail.com,1:00 pm,G16
+SHOW00090,TKT0089,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V016,Sienna,Perera,sienna.perera16@mail.com,4:00 pm,C5
+SHOW00110,TKT0090,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C002,Wellington,V008,Daniel,Scott,daniel.scott8@mail.com,10:00 am,B10
+SHOW00140,TKT0091,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V021,Ethan,Walker,ethan.walker21@mail.com,7:30 pm,A3
+SHOW00063,TKT0092,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V023,Isla,Young,isla.young23@mail.com,10:00 am,B11
+SHOW00134,TKT0093,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V039,Olivia,Brown,olivia.brown39@mail.com,4:00 pm,G16
+SHOW00032,TKT0094,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V052,Liam,Scott,liam.scott52@mail.com,4:00 pm,F19
+SHOW00067,TKT0095,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V065,Leo,Patel,leo.patel65@mail.com,9:45 pm,D14
+SHOW00091,TKT0096,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V052,Liam,Scott,liam.scott52@mail.com,7:30 pm,A5
+SHOW00152,TKT0097,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V032,Noah,Lee,noah.lee32@mail.com,7:30 pm,F1
+SHOW00168,TKT0098,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V035,Grace,Walker,grace.walker35@mail.com,10:00 am,A5
+SHOW00139,TKT0099,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V025,Grace,Singh,grace.singh25@mail.com,4:00 pm,E11
+SHOW00106,TKT0100,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V054,Mia,Wilson,mia.wilson54@mail.com,1:00 pm,A9
+SHOW00101,TKT0101,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V064,Amelia,Walker,amelia.walker64@mail.com,1:00 pm,D3
+SHOW00008,TKT0102,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V026,Isla,Taylor,isla.taylor26@mail.com,4:00 pm,D4
+SHOW00154,TKT0103,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V001,Grace,Chen,grace.chen1@mail.com,10:00 am,A8
+SHOW00080,TKT0104,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V037,Lucas,Chen,lucas.chen37@mail.com,10:00 am,D8
+SHOW00032,TKT0105,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V023,Isla,Young,isla.young23@mail.com,4:00 pm,G2
+SHOW00170,TKT0106,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V057,Isla,Patel,isla.patel57@mail.com,4:00 pm,E9
+SHOW00109,TKT0107,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V067,Jack,Young,jack.young67@mail.com,9:45 pm,G10
+SHOW00096,TKT0108,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V043,Ruby,Young,ruby.young43@mail.com,7:30 pm,B17
+SHOW00167,TKT0109,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V060,Lucas,Wilson,lucas.wilson60@mail.com,9:45 pm,C5
+SHOW00039,TKT0110,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V007,Emma,Patel,emma.patel7@mail.com,1:00 pm,D6
+SHOW00017,TKT0111,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V066,Ava,Smith,ava.smith66@mail.com,1:00 pm,E17
+SHOW00135,TKT0112,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V005,Emma,Taylor,emma.taylor5@mail.com,7:30 pm,B17
+SHOW00019,TKT0113,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V006,Daniel,Young,daniel.young6@mail.com,7:30 pm,E1
+SHOW00090,TKT0114,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V059,Daniel,Lee,daniel.lee59@mail.com,4:00 pm,C17
+SHOW00162,TKT0115,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V049,Sienna,Wilson,sienna.wilson49@mail.com,9:45 pm,D14
+SHOW00030,TKT0116,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V018,Charlotte,Patel,charlotte.patel18@mail.com,10:00 am,B8
+SHOW00028,TKT0117,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V068,Ava,Brown,ava.brown68@mail.com,7:30 pm,A8
+SHOW00129,TKT0118,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V041,Sophia,Wilson,sophia.wilson41@mail.com,4:00 pm,D15
+SHOW00029,TKT0119,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V068,Ava,Brown,ava.brown68@mail.com,9:45 pm,D20
+SHOW00005,TKT0120,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V062,Noah,Smith,noah.smith62@mail.com,9:45 pm,E16
+SHOW00134,TKT0121,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V015,Jack,Scott,jack.scott15@mail.com,4:00 pm,A4
+SHOW00094,TKT0122,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V011,Olivia,Brown,olivia.brown11@mail.com,1:00 pm,B5
+SHOW00116,TKT0123,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C003,Christchurch,V043,Ruby,Young,ruby.young43@mail.com,7:30 pm,E5
+SHOW00144,TKT0124,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V015,Jack,Scott,jack.scott15@mail.com,4:00 pm,D4
+SHOW00121,TKT0125,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V027,Ava,Taylor,ava.taylor27@mail.com,9:45 pm,E4
+SHOW00147,TKT0126,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V030,Sienna,Scott,sienna.scott30@mail.com,4:00 pm,D7
+SHOW00099,TKT0127,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C004,Hamilton,V027,Ava,Taylor,ava.taylor27@mail.com,9:45 pm,G12
+SHOW00036,TKT0128,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V005,Emma,Taylor,emma.taylor5@mail.com,7:30 pm,D12
+SHOW00085,TKT0129,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C001,Auckland,V060,Lucas,Wilson,lucas.wilson60@mail.com,1:00 pm,B8
+SHOW00009,TKT0130,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V034,Jack,Fernando,jack.fernando34@mail.com,7:30 pm,D12
+SHOW00003,TKT0131,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V015,Jack,Scott,jack.scott15@mail.com,4:00 pm,D2
+SHOW00063,TKT0132,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V037,Lucas,Chen,lucas.chen37@mail.com,10:00 am,A1
+SHOW00148,TKT0133,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V064,Amelia,Walker,amelia.walker64@mail.com,7:30 pm,E12
+SHOW00102,TKT0134,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V037,Lucas,Chen,lucas.chen37@mail.com,4:00 pm,C16
+SHOW00145,TKT0135,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V020,Liam,Taylor,liam.taylor20@mail.com,9:45 pm,A16
+SHOW00114,TKT0136,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C003,Christchurch,V018,Charlotte,Patel,charlotte.patel18@mail.com,1:00 pm,G15
+SHOW00144,TKT0137,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V053,Ava,Smith,ava.smith53@mail.com,4:00 pm,D16
+SHOW00010,TKT0138,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V066,Ava,Smith,ava.smith66@mail.com,9:45 pm,G6
+SHOW00067,TKT0139,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V002,Amelia,Lee,amelia.lee2@mail.com,9:45 pm,D8
+SHOW00073,TKT0140,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V044,Olivia,Perera,olivia.perera44@mail.com,10:00 am,C9
+SHOW00033,TKT0141,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V016,Sienna,Perera,sienna.perera16@mail.com,7:30 pm,C1
+SHOW00014,TKT0142,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C004,Hamilton,V062,Noah,Smith,noah.smith62@mail.com,7:30 pm,A11
+SHOW00113,TKT0143,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C002,Wellington,V060,Lucas,Wilson,lucas.wilson60@mail.com,7:30 pm,F2
+SHOW00099,TKT0144,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C004,Hamilton,V020,Liam,Taylor,liam.taylor20@mail.com,9:45 pm,G2
+SHOW00045,TKT0145,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V026,Isla,Taylor,isla.taylor26@mail.com,7:30 pm,E8
+SHOW00128,TKT0146,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V067,Jack,Young,jack.young67@mail.com,1:00 pm,D9
+SHOW00090,TKT0147,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V042,Nathan,Walker,nathan.walker42@mail.com,4:00 pm,C3
+SHOW00085,TKT0148,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C001,Auckland,V049,Sienna,Wilson,sienna.wilson49@mail.com,1:00 pm,B2
+SHOW00073,TKT0149,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V058,Noah,Roberts,noah.roberts58@mail.com,10:00 am,E11
+SHOW00131,TKT0150,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V043,Ruby,Young,ruby.young43@mail.com,9:45 pm,G2
+SHOW00158,TKT0151,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V057,Isla,Patel,isla.patel57@mail.com,9:45 pm,G9
+SHOW00049,TKT0152,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V049,Sienna,Wilson,sienna.wilson49@mail.com,4:00 pm,C13
+SHOW00094,TKT0153,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V040,Daniel,Young,daniel.young40@mail.com,1:00 pm,F3
+SHOW00097,TKT0154,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C004,Hamilton,V002,Amelia,Lee,amelia.lee2@mail.com,1:00 pm,E10
+SHOW00124,TKT0155,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V006,Daniel,Young,daniel.young6@mail.com,4:00 pm,F15
+SHOW00120,TKT0156,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V043,Ruby,Young,ruby.young43@mail.com,7:30 pm,C15
+SHOW00088,TKT0157,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V024,Olivia,Brown,olivia.brown24@mail.com,10:00 am,F17
+SHOW00005,TKT0158,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V045,Charlotte,Scott,charlotte.scott45@mail.com,9:45 pm,C17
+SHOW00108,TKT0159,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V033,Daniel,Scott,daniel.scott33@mail.com,7:30 pm,G4
+SHOW00083,TKT0160,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V024,Olivia,Brown,olivia.brown24@mail.com,7:30 pm,G1
+SHOW00031,TKT0161,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V003,Liam,Fernando,liam.fernando3@mail.com,1:00 pm,G20
+SHOW00083,TKT0162,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V059,Daniel,Lee,daniel.lee59@mail.com,7:30 pm,B11
+SHOW00112,TKT0163,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C002,Wellington,V020,Liam,Taylor,liam.taylor20@mail.com,4:00 pm,E14
+SHOW00058,TKT0164,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V022,Amelia,Brown,amelia.brown22@mail.com,10:00 am,G1
+SHOW00118,TKT0165,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V005,Emma,Taylor,emma.taylor5@mail.com,10:00 am,B7
+SHOW00166,TKT0166,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V043,Ruby,Young,ruby.young43@mail.com,7:30 pm,D17
+SHOW00025,TKT0167,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V068,Ava,Brown,ava.brown68@mail.com,10:00 am,G14
+SHOW00120,TKT0168,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V037,Lucas,Chen,lucas.chen37@mail.com,7:30 pm,E14
+SHOW00108,TKT0169,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V060,Lucas,Wilson,lucas.wilson60@mail.com,7:30 pm,G12
+SHOW00087,TKT0170,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C001,Auckland,V022,Amelia,Brown,amelia.brown22@mail.com,9:45 pm,C8
+SHOW00135,TKT0171,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V050,Grace,Perera,grace.perera50@mail.com,7:30 pm,C2
+SHOW00079,TKT0172,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V064,Amelia,Walker,amelia.walker64@mail.com,9:45 pm,A5
+SHOW00157,TKT0173,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V035,Grace,Walker,grace.walker35@mail.com,7:30 pm,F1
+SHOW00134,TKT0174,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V064,Amelia,Walker,amelia.walker64@mail.com,4:00 pm,D18
+SHOW00164,TKT0175,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V054,Mia,Wilson,mia.wilson54@mail.com,1:00 pm,F12
+SHOW00172,TKT0176,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V061,Lucas,Wilson,lucas.wilson61@mail.com,9:45 pm,B7
+SHOW00155,TKT0177,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V039,Olivia,Brown,olivia.brown39@mail.com,1:00 pm,G15
+SHOW00171,TKT0178,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V008,Daniel,Scott,daniel.scott8@mail.com,7:30 pm,F5
+SHOW00084,TKT0179,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V005,Emma,Taylor,emma.taylor5@mail.com,9:45 pm,D11
+SHOW00037,TKT0180,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V014,Nathan,Young,nathan.young14@mail.com,9:45 pm,E14
+SHOW00080,TKT0181,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V004,Ruby,Roberts,ruby.roberts4@mail.com,10:00 am,D7
+SHOW00147,TKT0182,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V009,Grace,Smith,grace.smith9@mail.com,4:00 pm,D17
+SHOW00126,TKT0183,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V014,Nathan,Young,nathan.young14@mail.com,9:45 pm,F16
+SHOW00157,TKT0184,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V023,Isla,Young,isla.young23@mail.com,7:30 pm,B7
+SHOW00152,TKT0185,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V040,Daniel,Young,daniel.young40@mail.com,7:30 pm,D19
+SHOW00109,TKT0186,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V003,Liam,Fernando,liam.fernando3@mail.com,9:45 pm,A5
+SHOW00074,TKT0187,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V033,Daniel,Scott,daniel.scott33@mail.com,1:00 pm,G8
+SHOW00141,TKT0188,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V016,Sienna,Perera,sienna.perera16@mail.com,9:45 pm,G2
+SHOW00043,TKT0189,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V063,Noah,Lee,noah.lee63@mail.com,1:00 pm,B18
+SHOW00063,TKT0190,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V051,Mason,Smith,mason.smith51@mail.com,10:00 am,B12
+SHOW00046,TKT0191,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V024,Olivia,Brown,olivia.brown24@mail.com,9:45 pm,C19
+SHOW00059,TKT0192,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V036,Liam,Chen,liam.chen36@mail.com,1:00 pm,B5
+SHOW00140,TKT0193,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V051,Mason,Smith,mason.smith51@mail.com,7:30 pm,A19
+SHOW00007,TKT0194,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V027,Ava,Taylor,ava.taylor27@mail.com,1:00 pm,G8
+SHOW00154,TKT0195,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V070,Mason,Scott,mason.scott70@mail.com,10:00 am,G18
+SHOW00026,TKT0196,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V042,Nathan,Walker,nathan.walker42@mail.com,1:00 pm,F3
+SHOW00057,TKT0197,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V007,Emma,Patel,emma.patel7@mail.com,7:30 pm,F11
+SHOW00060,TKT0198,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V001,Grace,Chen,grace.chen1@mail.com,4:00 pm,C17
+SHOW00022,TKT0199,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C001,Auckland,V038,Jack,Patel,jack.patel38@mail.com,4:00 pm,E16
+SHOW00029,TKT0200,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V010,Mia,Singh,mia.singh10@mail.com,9:45 pm,G14
+SHOW00001,TKT0201,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V036,Liam,Chen,liam.chen36@mail.com,10:00 am,A7
+SHOW00121,TKT0202,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V035,Grace,Walker,grace.walker35@mail.com,9:45 pm,C17
+SHOW00097,TKT0203,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C004,Hamilton,V034,Jack,Fernando,jack.fernando34@mail.com,1:00 pm,B20
+SHOW00026,TKT0204,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V007,Emma,Patel,emma.patel7@mail.com,1:00 pm,B10
+SHOW00027,TKT0205,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V025,Grace,Singh,grace.singh25@mail.com,4:00 pm,G4
+SHOW00059,TKT0206,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V028,Ethan,King,ethan.king28@mail.com,1:00 pm,B19
+SHOW00150,TKT0207,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V051,Mason,Smith,mason.smith51@mail.com,1:00 pm,D13
+SHOW00162,TKT0208,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V066,Ava,Smith,ava.smith66@mail.com,9:45 pm,F10
+SHOW00112,TKT0209,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C002,Wellington,V030,Sienna,Scott,sienna.scott30@mail.com,4:00 pm,C6
+SHOW00076,TKT0210,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V038,Jack,Patel,jack.patel38@mail.com,9:45 pm,C17
+SHOW00014,TKT0211,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C004,Hamilton,V013,Leo,Perera,leo.perera13@mail.com,7:30 pm,A10
+SHOW00077,TKT0212,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V046,Olivia,Perera,olivia.perera46@mail.com,1:00 pm,D19
+SHOW00108,TKT0213,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V048,Mason,Wilson,mason.wilson48@mail.com,7:30 pm,D6
+SHOW00072,TKT0214,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V057,Isla,Patel,isla.patel57@mail.com,9:45 pm,B5
+SHOW00107,TKT0215,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V060,Lucas,Wilson,lucas.wilson60@mail.com,4:00 pm,D16
+SHOW00004,TKT0216,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V002,Amelia,Lee,amelia.lee2@mail.com,7:30 pm,A6
+SHOW00128,TKT0217,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V049,Sienna,Wilson,sienna.wilson49@mail.com,1:00 pm,B15
+SHOW00085,TKT0218,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C001,Auckland,V043,Ruby,Young,ruby.young43@mail.com,1:00 pm,E8
+SHOW00018,TKT0219,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V003,Liam,Fernando,liam.fernando3@mail.com,4:00 pm,D4
+SHOW00144,TKT0220,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V024,Olivia,Brown,olivia.brown24@mail.com,4:00 pm,D2
+SHOW00016,TKT0221,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V062,Noah,Smith,noah.smith62@mail.com,10:00 am,D4
+SHOW00056,TKT0222,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V069,Isla,Perera,isla.perera69@mail.com,4:00 pm,E12
+SHOW00158,TKT0223,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V028,Ethan,King,ethan.king28@mail.com,9:45 pm,C11
+SHOW00017,TKT0224,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V025,Grace,Singh,grace.singh25@mail.com,1:00 pm,E4
+SHOW00100,TKT0225,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V014,Nathan,Young,nathan.young14@mail.com,10:00 am,A10
+SHOW00101,TKT0226,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V054,Mia,Wilson,mia.wilson54@mail.com,1:00 pm,A16
+SHOW00123,TKT0227,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C005,Dunedin,V035,Grace,Walker,grace.walker35@mail.com,1:00 pm,F19
+SHOW00055,TKT0228,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V066,Ava,Smith,ava.smith66@mail.com,10:00 am,G12
+SHOW00095,TKT0229,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V012,Mason,Scott,mason.scott12@mail.com,4:00 pm,F6
+SHOW00039,TKT0230,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V040,Daniel,Young,daniel.young40@mail.com,1:00 pm,E6
+SHOW00104,TKT0231,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V003,Liam,Fernando,liam.fernando3@mail.com,9:45 pm,C19
+SHOW00027,TKT0232,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V035,Grace,Walker,grace.walker35@mail.com,4:00 pm,C9
+SHOW00167,TKT0233,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V044,Olivia,Perera,olivia.perera44@mail.com,9:45 pm,E10
+SHOW00063,TKT0234,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V003,Liam,Fernando,liam.fernando3@mail.com,10:00 am,G2
+SHOW00070,TKT0235,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V066,Ava,Smith,ava.smith66@mail.com,4:00 pm,F18
+SHOW00147,TKT0236,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V034,Jack,Fernando,jack.fernando34@mail.com,4:00 pm,F7
+SHOW00079,TKT0237,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V039,Olivia,Brown,olivia.brown39@mail.com,9:45 pm,E1
+SHOW00056,TKT0238,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V045,Charlotte,Scott,charlotte.scott45@mail.com,4:00 pm,D5
+SHOW00078,TKT0239,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V038,Jack,Patel,jack.patel38@mail.com,7:30 pm,D1
+SHOW00058,TKT0240,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V057,Isla,Patel,isla.patel57@mail.com,10:00 am,B15
+SHOW00104,TKT0241,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V062,Noah,Smith,noah.smith62@mail.com,9:45 pm,F3
+SHOW00166,TKT0242,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V004,Ruby,Roberts,ruby.roberts4@mail.com,7:30 pm,F2
+SHOW00082,TKT0243,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V019,Sienna,Perera,sienna.perera19@mail.com,4:00 pm,B6
+SHOW00036,TKT0244,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V025,Grace,Singh,grace.singh25@mail.com,7:30 pm,G20
+SHOW00086,TKT0245,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C001,Auckland,V039,Olivia,Brown,olivia.brown39@mail.com,4:00 pm,G2
+SHOW00059,TKT0246,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V070,Mason,Scott,mason.scott70@mail.com,1:00 pm,B17
+SHOW00139,TKT0247,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V063,Noah,Lee,noah.lee63@mail.com,4:00 pm,F2
+SHOW00024,TKT0248,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C001,Auckland,V057,Isla,Patel,isla.patel57@mail.com,9:45 pm,E10
+SHOW00019,TKT0249,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V059,Daniel,Lee,daniel.lee59@mail.com,7:30 pm,A8
+SHOW00053,TKT0250,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V004,Ruby,Roberts,ruby.roberts4@mail.com,7:30 pm,C3
+SHOW00082,TKT0251,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V032,Noah,Lee,noah.lee32@mail.com,4:00 pm,C12
+SHOW00132,TKT0252,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V047,Mason,Roberts,mason.roberts47@mail.com,10:00 am,B17
+SHOW00153,TKT0253,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V015,Jack,Scott,jack.scott15@mail.com,9:45 pm,A20
+SHOW00133,TKT0254,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V061,Lucas,Wilson,lucas.wilson61@mail.com,1:00 pm,C15
+SHOW00117,TKT0255,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C003,Christchurch,V054,Mia,Wilson,mia.wilson54@mail.com,9:45 pm,G3
+SHOW00112,TKT0256,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C002,Wellington,V058,Noah,Roberts,noah.roberts58@mail.com,4:00 pm,D2
+SHOW00037,TKT0257,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V038,Jack,Patel,jack.patel38@mail.com,9:45 pm,F2
+SHOW00121,TKT0258,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V068,Ava,Brown,ava.brown68@mail.com,9:45 pm,F4
+SHOW00047,TKT0259,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V013,Leo,Perera,leo.perera13@mail.com,10:00 am,G3
+SHOW00054,TKT0260,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V036,Liam,Chen,liam.chen36@mail.com,9:45 pm,E6
+SHOW00146,TKT0261,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C005,Dunedin,V025,Grace,Singh,grace.singh25@mail.com,1:00 pm,F17
+SHOW00067,TKT0262,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V061,Lucas,Wilson,lucas.wilson61@mail.com,9:45 pm,G10
+SHOW00035,TKT0263,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V035,Grace,Walker,grace.walker35@mail.com,1:00 pm,C15
+SHOW00134,TKT0264,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V065,Leo,Patel,leo.patel65@mail.com,4:00 pm,E15
+SHOW00151,TKT0265,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V053,Ava,Smith,ava.smith53@mail.com,4:00 pm,D3
+SHOW00115,TKT0266,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C003,Christchurch,V005,Emma,Taylor,emma.taylor5@mail.com,4:00 pm,G15
+SHOW00066,TKT0267,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V048,Mason,Wilson,mason.wilson48@mail.com,7:30 pm,B12
+SHOW00002,TKT0268,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V006,Daniel,Young,daniel.young6@mail.com,1:00 pm,A15
+SHOW00111,TKT0269,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C002,Wellington,V045,Charlotte,Scott,charlotte.scott45@mail.com,1:00 pm,E4
+SHOW00006,TKT0270,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V015,Jack,Scott,jack.scott15@mail.com,10:00 am,G6
+SHOW00049,TKT0271,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V058,Noah,Roberts,noah.roberts58@mail.com,4:00 pm,B16
+SHOW00170,TKT0272,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V068,Ava,Brown,ava.brown68@mail.com,4:00 pm,D11
+SHOW00163,TKT0273,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V049,Sienna,Wilson,sienna.wilson49@mail.com,10:00 am,B8
+SHOW00155,TKT0274,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V019,Sienna,Perera,sienna.perera19@mail.com,1:00 pm,C14
+SHOW00142,TKT0275,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V068,Ava,Brown,ava.brown68@mail.com,10:00 am,F3
+SHOW00076,TKT0276,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V024,Olivia,Brown,olivia.brown24@mail.com,9:45 pm,A10
+SHOW00021,TKT0277,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C001,Auckland,V023,Isla,Young,isla.young23@mail.com,1:00 pm,B7
+SHOW00032,TKT0278,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V019,Sienna,Perera,sienna.perera19@mail.com,4:00 pm,G19
+SHOW00089,TKT0279,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C002,Wellington,V055,Mason,Walker,mason.walker55@mail.com,1:00 pm,B6
+SHOW00099,TKT0280,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C004,Hamilton,V014,Nathan,Young,nathan.young14@mail.com,9:45 pm,F1
+SHOW00166,TKT0281,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V047,Mason,Roberts,mason.roberts47@mail.com,7:30 pm,E4
+SHOW00106,TKT0282,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V025,Grace,Singh,grace.singh25@mail.com,1:00 pm,D9
+SHOW00134,TKT0283,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C002,Wellington,V008,Daniel,Scott,daniel.scott8@mail.com,4:00 pm,A6
+SHOW00061,TKT0284,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V013,Leo,Perera,leo.perera13@mail.com,7:30 pm,B3
+SHOW00074,TKT0285,F004,The Last Kingdom,Ridley Scott,D004,Action,C003,Christchurch,V060,Lucas,Wilson,lucas.wilson60@mail.com,1:00 pm,A11
+SHOW00160,TKT0286,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V043,Ruby,Young,ruby.young43@mail.com,4:00 pm,F5
+SHOW00120,TKT0287,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V049,Sienna,Wilson,sienna.wilson49@mail.com,7:30 pm,G18
+SHOW00023,TKT0288,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C001,Auckland,V005,Emma,Taylor,emma.taylor5@mail.com,7:30 pm,C17
+SHOW00153,TKT0289,F008,Broken Paths,Sofia Coppola,D006,Drama,C001,Auckland,V029,Mason,Scott,mason.scott29@mail.com,9:45 pm,E10
+SHOW00048,TKT0290,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V009,Grace,Smith,grace.smith9@mail.com,1:00 pm,C1
+SHOW00028,TKT0291,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C002,Wellington,V010,Mia,Singh,mia.singh10@mail.com,7:30 pm,D2
+SHOW00045,TKT0292,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V044,Olivia,Perera,olivia.perera44@mail.com,7:30 pm,D10
+SHOW00021,TKT0293,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C001,Auckland,V047,Mason,Roberts,mason.roberts47@mail.com,1:00 pm,D2
+SHOW00052,TKT0294,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V007,Emma,Patel,emma.patel7@mail.com,1:00 pm,F3
+SHOW00004,TKT0295,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V018,Charlotte,Patel,charlotte.patel18@mail.com,7:30 pm,A9
+SHOW00161,TKT0296,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V039,Olivia,Brown,olivia.brown39@mail.com,7:30 pm,A6
+SHOW00101,TKT0297,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V034,Jack,Fernando,jack.fernando34@mail.com,1:00 pm,C15
+SHOW00172,TKT0298,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V020,Liam,Taylor,liam.taylor20@mail.com,9:45 pm,E12
+SHOW00036,TKT0299,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V008,Daniel,Scott,daniel.scott8@mail.com,7:30 pm,D13
+SHOW00105,TKT0300,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C001,Auckland,V059,Daniel,Lee,daniel.lee59@mail.com,10:00 am,B14
+SHOW00094,TKT0301,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C003,Christchurch,V010,Mia,Singh,mia.singh10@mail.com,1:00 pm,G8
+SHOW00072,TKT0302,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V052,Liam,Scott,liam.scott52@mail.com,9:45 pm,D7
+SHOW00163,TKT0303,F008,Broken Paths,Sofia Coppola,D006,Drama,C004,Hamilton,V062,Noah,Smith,noah.smith62@mail.com,10:00 am,A6
+SHOW00054,TKT0304,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V051,Mason,Smith,mason.smith51@mail.com,9:45 pm,B16
+SHOW00082,TKT0305,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V055,Mason,Walker,mason.walker55@mail.com,4:00 pm,A14
+SHOW00011,TKT0306,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C003,Christchurch,V070,Mason,Scott,mason.scott70@mail.com,1:00 pm,E10
+SHOW00017,TKT0307,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V051,Mason,Smith,mason.smith51@mail.com,1:00 pm,E10
+SHOW00131,TKT0308,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V053,Ava,Smith,ava.smith53@mail.com,9:45 pm,A17
+SHOW00054,TKT0309,F003,Midnight Escape,David Fincher,D003,Thriller,C003,Christchurch,V024,Olivia,Brown,olivia.brown24@mail.com,9:45 pm,B3
+SHOW00056,TKT0310,F003,Midnight Escape,David Fincher,D003,Thriller,C004,Hamilton,V026,Isla,Taylor,isla.taylor26@mail.com,4:00 pm,B18
+SHOW00040,TKT0311,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V006,Daniel,Young,daniel.young6@mail.com,4:00 pm,F6
+SHOW00018,TKT0312,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V055,Mason,Walker,mason.walker55@mail.com,4:00 pm,G1
+SHOW00015,TKT0313,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C004,Hamilton,V042,Nathan,Walker,nathan.walker42@mail.com,9:45 pm,G12
+SHOW00159,TKT0314,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V054,Mia,Wilson,mia.wilson54@mail.com,1:00 pm,F19
+SHOW00020,TKT0315,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V006,Daniel,Young,daniel.young6@mail.com,9:45 pm,B4
+SHOW00103,TKT0316,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V035,Grace,Walker,grace.walker35@mail.com,7:30 pm,G9
+SHOW00117,TKT0317,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C003,Christchurch,V057,Isla,Patel,isla.patel57@mail.com,9:45 pm,E13
+SHOW00019,TKT0318,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V019,Sienna,Perera,sienna.perera19@mail.com,7:30 pm,A12
+SHOW00010,TKT0319,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C002,Wellington,V034,Jack,Fernando,jack.fernando34@mail.com,9:45 pm,E6
+SHOW00143,TKT0320,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C004,Hamilton,V068,Ava,Brown,ava.brown68@mail.com,1:00 pm,E5
+SHOW00015,TKT0321,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C004,Hamilton,V064,Amelia,Walker,amelia.walker64@mail.com,9:45 pm,C17
+SHOW00079,TKT0322,F004,The Last Kingdom,Ridley Scott,D004,Action,C004,Hamilton,V061,Lucas,Wilson,lucas.wilson61@mail.com,9:45 pm,G3
+SHOW00130,TKT0323,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V054,Mia,Wilson,mia.wilson54@mail.com,7:30 pm,D20
+SHOW00062,TKT0324,F003,Midnight Escape,David Fincher,D003,Thriller,C005,Dunedin,V030,Sienna,Scott,sienna.scott30@mail.com,9:45 pm,G5
+SHOW00065,TKT0325,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V008,Daniel,Scott,daniel.scott8@mail.com,4:00 pm,F15
+SHOW00038,TKT0326,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V023,Isla,Young,isla.young23@mail.com,10:00 am,D14
+SHOW00127,TKT0327,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V037,Lucas,Chen,lucas.chen37@mail.com,10:00 am,E11
+SHOW00131,TKT0328,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C001,Auckland,V055,Mason,Walker,mason.walker55@mail.com,9:45 pm,B9
+SHOW00064,TKT0329,F004,The Last Kingdom,Ridley Scott,D004,Action,C001,Auckland,V010,Mia,Singh,mia.singh10@mail.com,1:00 pm,A1
+SHOW00042,TKT0330,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V063,Noah,Lee,noah.lee63@mail.com,10:00 am,F17
+SHOW00080,TKT0331,F004,The Last Kingdom,Ridley Scott,D004,Action,C005,Dunedin,V003,Liam,Fernando,liam.fernando3@mail.com,10:00 am,E5
+SHOW00070,TKT0332,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V050,Grace,Perera,grace.perera50@mail.com,4:00 pm,D11
+SHOW00138,TKT0333,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V038,Jack,Patel,jack.patel38@mail.com,1:00 pm,G19
+SHOW00069,TKT0334,F004,The Last Kingdom,Ridley Scott,D004,Action,C002,Wellington,V066,Ava,Smith,ava.smith66@mail.com,1:00 pm,C1
+SHOW00100,TKT0335,F005,Laugh Out Loud,Taika Waititi,D002,Comedy,C005,Dunedin,V068,Ava,Brown,ava.brown68@mail.com,10:00 am,F2
+SHOW00050,TKT0336,F003,Midnight Escape,David Fincher,D003,Thriller,C002,Wellington,V070,Mason,Scott,mason.scott70@mail.com,7:30 pm,F8
+SHOW00120,TKT0337,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C004,Hamilton,V032,Noah,Lee,noah.lee32@mail.com,7:30 pm,F17
+SHOW00162,TKT0338,F008,Broken Paths,Sofia Coppola,D006,Drama,C003,Christchurch,V039,Olivia,Brown,olivia.brown39@mail.com,9:45 pm,C20
+SHOW00138,TKT0339,F007,Cyber Pulse,James Cameron,D001,Sci-Fi,C003,Christchurch,V028,Ethan,King,ethan.king28@mail.com,1:00 pm,B13
+SHOW00038,TKT0340,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V029,Mason,Scott,mason.scott29@mail.com,10:00 am,D14
+SHOW00020,TKT0341,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C005,Dunedin,V009,Grace,Smith,grace.smith9@mail.com,9:45 pm,C7
+SHOW00033,TKT0342,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C003,Christchurch,V011,Olivia,Brown,olivia.brown11@mail.com,7:30 pm,E10
+SHOW00043,TKT0343,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V061,Lucas,Wilson,lucas.wilson61@mail.com,1:00 pm,A17
+SHOW00038,TKT0344,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C005,Dunedin,V023,Isla,Young,isla.young23@mail.com,10:00 am,D4
+SHOW00037,TKT0345,F002,Ocean Hearts,Greta Gerwig,D005,Romance,C004,Hamilton,V019,Sienna,Perera,sienna.perera19@mail.com,9:45 pm,F20
+SHOW00116,TKT0346,F006,Silent Echoes,Denis Villeneuve,D007,Drama,C003,Christchurch,V015,Jack,Scott,jack.scott15@mail.com,7:30 pm,E17
+SHOW00168,TKT0347,F008,Broken Paths,Sofia Coppola,D006,Drama,C005,Dunedin,V025,Grace,Singh,grace.singh25@mail.com,10:00 am,E11
+SHOW00003,TKT0348,F001,Shadow Horizon,Christopher Nolan,D008,Sci-Fi,C001,Auckland,V019,Sienna,Perera,sienna.perera19@mail.com,4:00 pm,C7
+SHOW00045,TKT0349,F003,Midnight Escape,David Fincher,D003,Thriller,C001,Auckland,V043,Ruby,Young,ruby.young43@mail.com,7:30 pm,F9
+SHOW00156,TKT0350,F008,Broken Paths,Sofia Coppola,D006,Drama,C002,Wellington,V019,Sienna,Perera,sienna.perera19@mail.com,4:00 pm,G18
