@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    {% include "nav.html" %}
     <h1>All Films</h1>
     <table border="1">
         <tr>
@@ -21,5 +22,4 @@
         {% endfor %}
     </table>
 </body>
-{% include "nav.html" %}
 </html>
