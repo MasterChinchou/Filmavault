@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmavault - Films</title>
+</head>
+<body>
+    <h1>All Films</h1>
+    <table border="1">
+        <tr>
+            <th>Film Name</th>
+            <th>Director</th>
+            <th>Genre</th>
+        </tr>
+        {% for film in films %}
+        <tr>
+            <td>{{ film["film_name"] }}</td>
+            <td>{{ film["director_name"] }}</td>
+            <td>{{ film["genre"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
