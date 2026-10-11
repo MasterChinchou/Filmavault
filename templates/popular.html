@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmavault - Popular Films</title>
+</head>
+<body>
+    <h1>Most Popular Films</h1>
+    <table border="1">
+        <tr>
+            <th>Film Name</th>
+            <th>Tickets Sold</th>
+        </tr>
+        {% for film in films %}
+        <tr>
+            <td>{{ film["film_name"] }}</td>
+            <td>{{ film["tickets_sold"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

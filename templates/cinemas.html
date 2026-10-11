@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmavault - Cinemas</title>
+</head>
+<body>
+    <h1>Our Cinemas</h1>
+    <table border="1">
+        <tr>
+            <th>Cinema ID</th>
+            <th>City</th>
+        </tr>
+        {% for cinema in cinemas %}
+        <tr>
+            <td>{{ cinema["cinema_id"] }}</td>
+            <td>{{ cinema["city"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

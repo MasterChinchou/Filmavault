@@ -32,5 +32,28 @@ def screenings():
     """).fetchall()
     conn.close()
     return render_template("screenings.html", screenings=screening_list)
+@app.route("/cinemas")
+def cinemas():
+    conn = get_connection()
+    cinema_list = conn.execute("""
+        SELECT cinema_id, city
+        FROM Cinema
+        ORDER BY city
+    """).fetchall()
+    conn.close()
+    return render_template("cinemas.html", cinemas=cinema_list)
+@app.route("/popular")
+def popular():
+    conn = get_connection()
+    popular_list = conn.execute("""
+        SELECT f.film_name, COUNT(t.ticket_no) AS tickets_sold
+        FROM Ticket t
+        JOIN Screening s ON t.screening_id = s.screening_id
+        JOIN Film f      ON s.film_id      = f.film_id
+        GROUP BY f.film_name
+        ORDER BY tickets_sold DESC
+    """).fetchall()
+    conn.close()
+    return render_template("popular.html", films=popular_list)
 if __name__ == "__main__":
     app.run(debug=True)
