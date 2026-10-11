@@ -8,7 +8,7 @@ def get_connection():
     return conn
 @app.route("/")
 def home():
-    return "Hello from Filmavault!"
+    return render_template("home.html")
 @app.route("/films")
 def films():
     conn = get_connection()
