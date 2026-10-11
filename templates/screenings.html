@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filmavault - Screenings</title>
+</head>
+<body>
+    <h1>What's Showing</h1>
+    <table border="1">
+        <tr>
+            <th>Film</th>
+            <th>Cinema</th>
+            <th>Session Time</th>
+        </tr>
+        {% for screening in screenings %}
+        <tr>
+            <td>{{ screening["film_name"] }}</td>
+            <td>{{ screening["city"] }}</td>
+            <td>{{ screening["session_time"] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -20,5 +20,17 @@ def films():
     """).fetchall()
     conn.close()
     return render_template("films.html", films=film_list)
+@app.route("/screenings")
+def screenings():
+    conn = get_connection()
+    screening_list = conn.execute("""
+        SELECT f.film_name, c.city, s.session_time
+        FROM Screening s
+        JOIN Film f   ON s.film_id = f.film_id
+        JOIN Cinema c ON s.cinema_id = c.cinema_id
+        ORDER BY f.film_name
+    """).fetchall()
+    conn.close()
+    return render_template("screenings.html", screenings=screening_list)
 if __name__ == "__main__":
     app.run(debug=True)
