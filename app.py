@@ -55,5 +55,8 @@ def popular():
     """).fetchall()
     conn.close()
     return render_template("popular.html", films=popular_list)
+@app.route("/about")
+def about():
+    return render_template("about.html")
 if __name__ == "__main__":
     app.run(debug=True)
