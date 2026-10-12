@@ -1,41 +1,106 @@
+/* Filmavault - dark & gold theme */
+
 body {
-    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #e8e8e8;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
 
+/* Navigation bar */
 nav {
-    background-color: #f0f0f0;
-    padding: 15px 20px;
-    border-bottom: 1px solid #ccc;
+    background-color: #1a1a1a;
+    padding: 15px 25px;
+    border-bottom: 2px solid #c9a227;
 }
 
 nav a {
-    margin-right: 15px;
+    color: #c9a227;
     text-decoration: none;
-    color: #000000;
     font-weight: bold;
+    margin: 0 6px;
 }
 
-h1 {
-    padding: 0 20px;
+nav a:hover {
+    color: #f0d070;
+    text-decoration: underline;
 }
 
-p {
-    padding: 0 20px;
+hr {
+    border: none;
+    margin: 0;
 }
 
+/* Headings */
+h1, h2 {
+    color: #c9a227;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+h1 { margin: 25px; }
+h2 { margin: 20px 25px 10px; }
+
+/* Content spacing */
+p, form, ul, img {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Tables */
 table {
     border-collapse: collapse;
-    margin: 20px;
-}
-
-th, td {
-    border: 1px solid #999;
-    padding: 8px 12px;
-    text-align: left;
+    width: calc(100% - 50px);
+    margin: 15px 25px 25px;
+    background-color: #1a1a1a;
 }
 
 th {
-    background-color: #f0f0f0;
+    background-color: #c9a227;
+    color: #0f0f0f;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    color: #e8e8e8;
+}
+
+tr:nth-child(even) td {
+    background-color: #161616;
+}
+
+/* Links in content */
+a {
+    color: #c9a227;
+}
+
+a:hover {
+    color: #f0d070;
+}
+
+/* Form inputs */
+input[type="text"], select {
+    background-color: #1a1a1a;
+    border: 1px solid #c9a227;
+    color: #e8e8e8;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button, input[type="submit"] {
+    background-color: #c9a227;
+    color: #0f0f0f;
+    border: none;
+    padding: 8px 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #f0d070;
 }

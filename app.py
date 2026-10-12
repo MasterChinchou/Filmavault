@@ -161,5 +161,21 @@ def delete_film(film_id):
                 error="This film can't be deleted — it still has screenings linked to it.")
     conn.close()
     return render_template("delete_film.html", film=film, error=None)
+@app.route("/popular")
+def popular():
+    conn = get_connection()
+    popular_list = conn.execute("""
+        SELECT f.film_name, COUNT(t.ticket_no) AS tickets_sold
+        FROM Ticket t
+        JOIN Screening s ON t.screening_id = s.screening_id
+        JOIN Film f      ON s.film_id      = f.film_id
+        GROUP BY f.film_name
+        ORDER BY tickets_sold DESC
+    """).fetchall()
+    conn.close()
+    return render_template("popular.html", films=popular_list)
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
 if __name__ == "__main__":
     app.run(debug=True)
