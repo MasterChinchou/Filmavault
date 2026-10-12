@@ -8,7 +8,15 @@ def get_connection():
     return conn
 @app.route("/")
 def home():
-    return render_template("home.html")
+    conn = get_connection()
+    film_count = conn.execute("SELECT COUNT(*) FROM Film").fetchone()[0]
+    cinema_count = conn.execute("SELECT COUNT(*) FROM Cinema").fetchone()[0]
+    ticket_count = conn.execute("SELECT COUNT(*) FROM Ticket").fetchone()[0]
+    conn.close()
+    return render_template("home.html",
+        film_count=film_count,
+        cinema_count=cinema_count,
+        ticket_count=ticket_count)
 @app.route("/films")
 def films():
     conn = get_connection()
