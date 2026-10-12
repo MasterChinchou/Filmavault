@@ -60,19 +60,35 @@ def cinemas():
     """).fetchall()
     conn.close()
     return render_template("cinemas.html", cinemas=cinema_list)
-@app.route("/popular")
-def popular():
+@app.route("/bookings")
+def bookings():
     conn = get_connection()
-    popular_list = conn.execute("""
-        SELECT f.film_name, COUNT(t.ticket_no) AS tickets_sold
-        FROM Ticket t
-        JOIN Screening s ON t.screening_id = s.screening_id
-        JOIN Film f      ON s.film_id      = f.film_id
-        GROUP BY f.film_name
-        ORDER BY tickets_sold DESC
-    """).fetchall()
+    search = request.args.get("q", "").strip()
+    if search:
+        booking_list = conn.execute("""
+            SELECT t.ticket_no, v.first_name, v.last_name,
+                   f.film_name, c.city, s.session_time, t.seat_no
+            FROM Ticket t
+            JOIN Viewer v    ON t.viewer_id = v.viewer_id
+            JOIN Screening s ON t.screening_id = s.screening_id
+            JOIN Film f      ON s.film_id = f.film_id
+            JOIN Cinema c    ON s.cinema_id = c.cinema_id
+            WHERE v.first_name LIKE ? OR v.last_name LIKE ? OR f.film_name LIKE ?
+            ORDER BY v.last_name
+        """, ('%' + search + '%', '%' + search + '%', '%' + search + '%')).fetchall()
+    else:
+        booking_list = conn.execute("""
+            SELECT t.ticket_no, v.first_name, v.last_name,
+                   f.film_name, c.city, s.session_time, t.seat_no
+            FROM Ticket t
+            JOIN Viewer v    ON t.viewer_id = v.viewer_id
+            JOIN Screening s ON t.screening_id = s.screening_id
+            JOIN Film f      ON s.film_id = f.film_id
+            JOIN Cinema c    ON s.cinema_id = c.cinema_id
+            ORDER BY v.last_name
+        """).fetchall()
     conn.close()
-    return render_template("popular.html", films=popular_list)
+    return render_template("bookings.html", bookings=booking_list, search=search)
 @app.route("/about")
 def about():
     return render_template("about.html")
