@@ -88,10 +88,16 @@ def add_film():
 @app.route("/edit_film/<film_id>", methods=["GET", "POST"])
 def edit_film(film_id):
     conn = get_connection()
+    film = conn.execute("SELECT * FROM Film WHERE film_id = ?", (film_id,)).fetchone()
+    directors = conn.execute("SELECT director_id, director_name FROM Director ORDER BY director_name").fetchall()
     if request.method == "POST":
-        film_name = request.form["film_name"]
-        genre = request.form["genre"]
+        film_name = request.form["film_name"].strip()
+        genre = request.form["genre"].strip()
         director_id = request.form["director_id"]
+        if not film_name or not genre:
+            conn.close()
+            return render_template("edit_film.html", film=film, directors=directors,
+                error="All fields are required. Please fill in every box.")
         conn.execute(
             "UPDATE Film SET film_name = ?, genre = ?, director_id = ? WHERE film_id = ?",
             (film_name, genre, director_id, film_id)
@@ -99,10 +105,9 @@ def edit_film(film_id):
         conn.commit()
         conn.close()
         return redirect("/films")
-    film = conn.execute("SELECT * FROM Film WHERE film_id = ?", (film_id,)).fetchone()
-    directors = conn.execute("SELECT director_id, director_name FROM Director ORDER BY director_name").fetchall()
+
     conn.close()
-    return render_template("edit_film.html", film=film, directors=directors)
+    return render_template("edit_film.html", film=film, directors=directors, error=None)
 @app.route("/delete_film/<film_id>", methods=["GET", "POST"])
 def delete_film(film_id):
     conn = get_connection()
