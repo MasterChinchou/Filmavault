@@ -6,13 +6,25 @@
 </head>
 <body>
     {% include "nav.html" %}
-    <h1>Welcome to Filmavault</h1>
-    <p>Cinema staff information system</p>
-        <h2>Overview</h2>
-    <ul>
-        <li><strong>{{ film_count }}</strong> films in the catalogue</li>
-        <li><strong>{{ cinema_count }}</strong> cinemas</li>
-        <li><strong>{{ ticket_count }}</strong> tickets sold</li>
-    </ul>
+
+    <div class="hero">
+        <h1>Welcome to Filmavault</h1>
+        <p>Cinema staff information system</p>
+    </div>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div class="stat-number">{{ film_count }}</div>
+            <div class="stat-label">Films in catalogue</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ cinema_count }}</div>
+            <div class="stat-label">Cinemas</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">{{ ticket_count }}</div>
+            <div class="stat-label">Tickets sold</div>
+        </div>
+    </div>
 </body>
 </html>

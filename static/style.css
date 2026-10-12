@@ -101,3 +101,50 @@ button:hover, input[type="submit"]:hover {
     font-size: 20px;
     text-decoration: none;
 }
+/* Home page hero */
+.hero {
+    text-align: center;
+    padding: 55px 20px 25px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    color: #bbb;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Home page stat cards */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 30px 25px;
+}
+
+.stat-card {
+    background-color: #1a1a1a;
+    border: 1px solid #c9a227;
+    border-radius: 8px;
+    padding: 30px 40px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.stat-number {
+    font-size: 44px;
+    font-weight: bold;
+    color: #c9a227;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.stat-label {
+    color: #ddd;
+    margin-top: 8px;
+    font-size: 15px;
+}
