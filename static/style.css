@@ -7,46 +7,41 @@ body {
     margin: 0;
     line-height: 1.6;
 }
-
 /* Navigation bar */
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1a1a1a;
-    padding: 15px 25px;
+    padding: 10px 20px;
     border-bottom: 2px solid #c9a227;
 }
-
 nav a {
     color: #c9a227;
     text-decoration: none;
     font-weight: bold;
     margin: 0 6px;
 }
-
 nav a:hover {
     color: #f0d070;
     text-decoration: underline;
 }
-
 hr {
     border: none;
     margin: 0;
 }
-
 /* Headings */
 h1, h2 {
     color: #c9a227;
     font-family: Georgia, 'Times New Roman', serif;
 }
-
 h1 { margin: 25px; }
 h2 { margin: 20px 25px 10px; }
-
 /* Content spacing */
 p, form, ul, img {
     margin-left: 25px;
     margin-right: 25px;
 }
-
 /* Tables */
 table {
     border-collapse: collapse;
@@ -54,33 +49,27 @@ table {
     margin: 15px 25px 25px;
     background-color: #1a1a1a;
 }
-
 th {
     background-color: #c9a227;
     color: #0f0f0f;
     padding: 10px;
     text-align: left;
 }
-
 td {
     border: 1px solid #333;
     padding: 10px;
     color: #e8e8e8;
 }
-
 tr:nth-child(even) td {
     background-color: #161616;
 }
-
 /* Links in content */
 a {
     color: #c9a227;
 }
-
 a:hover {
     color: #f0d070;
 }
-
 /* Form inputs */
 input[type="text"], select {
     background-color: #1a1a1a;
@@ -89,7 +78,6 @@ input[type="text"], select {
     padding: 8px;
     border-radius: 4px;
 }
-
 /* Buttons */
 button, input[type="submit"] {
     background-color: #c9a227;
@@ -100,7 +88,16 @@ button, input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 button:hover, input[type="submit"]:hover {
     background-color: #f0d070;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c9a227;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
 }

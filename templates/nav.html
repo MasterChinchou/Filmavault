@@ -1,11 +1,17 @@
 <nav>
-    <a href="/">Home</a> |
-    <a href="/films">Films</a> |
-    <a href="/screenings">Screenings</a> |
-    <a href="/cinemas">Cinemas</a> |
-    <a href="/popular">Popular</a>
-    <a href="/about">About</a>
-    <a href="/add_film">Add Film</a>
-    <a href="/bookings">Bookings</a>
+    <div class="nav-links">
+        <a href="/">Home</a> |
+        <a href="/films">Films</a> |
+        <a href="/screenings">Screenings</a> |
+        <a href="/cinemas">Cinemas</a> |
+        <a href="/popular">Popular</a> |
+        <a href="/about">About</a> |
+        <a href="/add_film">Add Film</a> |
+        <a href="/bookings">Bookings</a>
+    </div>
+    <a href="/" class="logo">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Filmavault logo" height="45">
+        FilmaVault
+    </a>
 </nav>
 <hr>
