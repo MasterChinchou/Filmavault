@@ -61,19 +61,28 @@ def about():
 @app.route("/add_film", methods=["GET", "POST"])
 def add_film():
     conn = get_connection()
-    if request.method == "POST":
-        film_id = request.form["film_id"]
-        film_name = request.form["film_name"]
-        genre = request.form["genre"]
-        director_id = request.form["director_id"]
-        conn.execute(
-            "INSERT INTO Film (film_id, film_name, genre, director_id) VALUES (?, ?, ?, ?)",
-            (film_id, film_name, genre, director_id)
-        )
-        conn.commit()
-        conn.close()
-        return redirect("/films")
     directors = conn.execute("SELECT director_id, director_name FROM Director ORDER BY director_name").fetchall()
+    if request.method == "POST":
+        film_id = request.form["film_id"].strip()
+        film_name = request.form["film_name"].strip()
+        genre = request.form["genre"].strip()
+        director_id = request.form["director_id"]
+        if not film_id or not film_name or not genre:
+            conn.close()
+            return render_template("add_film.html", directors=directors,
+                error="All fields are required. Please fill in every box.")
+        try:
+            conn.execute(
+                "INSERT INTO Film (film_id, film_name, genre, director_id) VALUES (?, ?, ?, ?)",
+                (film_id, film_name, genre, director_id)
+            )
+            conn.commit()
+            conn.close()
+            return redirect("/films")
+        except sqlite3.IntegrityError:
+            conn.close()
+            return render_template("add_film.html", directors=directors,
+                error="That Film ID already exists. Please use a different ID.")
     conn.close()
     return render_template("add_film.html", directors=directors)
 @app.route("/edit_film/<film_id>", methods=["GET", "POST"])

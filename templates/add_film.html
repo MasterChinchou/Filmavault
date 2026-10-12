@@ -7,6 +7,9 @@
 <body>
     {% include "nav.html" %}
     <h1>Add a Film</h1>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
     <form method="POST" action="/add_film">
         <p>Film ID: <input type="text" name="film_id" required></p>
         <p>Film Name: <input type="text" name="film_name" required></p>
