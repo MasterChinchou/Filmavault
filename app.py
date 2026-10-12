@@ -12,14 +12,24 @@ def home():
 @app.route("/films")
 def films():
     conn = get_connection()
-    film_list = conn.execute("""
-         SELECT f.film_id, f.film_name, f.genre, d.director_name
-        FROM Film f
-        JOIN Director d ON f.director_id = d.director_id
-        ORDER BY f.film_name
-    """).fetchall()
+    search = request.args.get("q", "").strip()
+    if search:
+        film_list = conn.execute("""
+            SELECT f.film_id, f.film_name, f.genre, d.director_name
+            FROM Film f
+            JOIN Director d ON f.director_id = d.director_id
+            WHERE f.film_name LIKE ? OR f.genre LIKE ?
+            ORDER BY f.film_name
+        """, ('%' + search + '%', '%' + search + '%')).fetchall()
+    else:
+        film_list = conn.execute("""
+            SELECT f.film_id, f.film_name, f.genre, d.director_name
+            FROM Film f
+            JOIN Director d ON f.director_id = d.director_id
+            ORDER BY f.film_name
+        """).fetchall()
     conn.close()
-    return render_template("films.html", films=film_list)
+    return render_template("films.html", films=film_list, search=search)
 @app.route("/screenings")
 def screenings():
     conn = get_connection()

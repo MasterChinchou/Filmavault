@@ -7,6 +7,11 @@
 <body>
     {% include "nav.html" %}
     <h1>All Films</h1>
+        <form method="GET" action="/films">
+        <input type="text" name="q" placeholder="Search by name or genre..." value="{{ search }}">
+        <button type="submit">Search</button>
+        <a href="/films">Clear</a>
+    </form>
     <table border="1">
         <tr>
             <th>Film Name</th>
@@ -25,5 +30,8 @@
         </tr>
         {% endfor %}
     </table>
+        {% if not films %}
+        <p>No films found "{{ search }}".</p>
+    {% endif %}
 </body>
 </html>
