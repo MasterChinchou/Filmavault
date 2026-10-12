@@ -73,9 +73,12 @@ def bookings():
             JOIN Screening s ON t.screening_id = s.screening_id
             JOIN Film f      ON s.film_id = f.film_id
             JOIN Cinema c    ON s.cinema_id = c.cinema_id
-            WHERE v.first_name LIKE ? OR v.last_name LIKE ? OR f.film_name LIKE ?
+            WHERE v.first_name LIKE ?
+               OR v.last_name LIKE ?
+               OR (v.first_name || ' ' || v.last_name) LIKE ?
+               OR f.film_name LIKE ?
             ORDER BY v.last_name
-        """, ('%' + search + '%', '%' + search + '%', '%' + search + '%')).fetchall()
+        """, ('%' + search + '%', '%' + search + '%', '%' + search + '%', '%' + search + '%')).fetchall()
     else:
         booking_list = conn.execute("""
             SELECT t.ticket_no, v.first_name, v.last_name,
