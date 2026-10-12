@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Film</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include "nav.html" %}
+    <h1>Delete Film</h1>
+
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+        <a href="/films">Back to Films</a>
+    {% else %}
+        <p>Are you sure you want to delete <strong>{{ film["film_name"] }}</strong> (ID: {{ film["film_id"] }})?</p>
+        <p>This cannot be undone.</p>
+        <form method="POST" action="/delete_film/{{ film['film_id'] }}">
+            <button type="submit">Yes, delete it</button>
+        </form>
+        <a href="/films">Cancel</a>
+    {% endif %}
+</body>
+</html>

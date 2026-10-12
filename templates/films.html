@@ -12,12 +12,16 @@
             <th>Film Name</th>
             <th>Director</th>
             <th>Genre</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         {% for film in films %}
         <tr>
             <td>{{ film["film_name"] }}</td>
             <td>{{ film["director_name"] }}</td>
             <td>{{ film["genre"] }}</td>
+            <td><a href="/edit_film/{{ film["film_id"] }}">Edit</a></td>
+         <td><a href="/delete_film/{{ film["film_id"] }}">Delete</a></td>
         </tr>
         {% endfor %}
     </table>

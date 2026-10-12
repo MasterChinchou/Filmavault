@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 import sqlite3
 app = Flask(__name__)
 def get_connection():
@@ -13,7 +13,7 @@ def home():
 def films():
     conn = get_connection()
     film_list = conn.execute("""
-        SELECT f.film_name, f.genre, d.director_name
+         SELECT f.film_id, f.film_name, f.genre, d.director_name
         FROM Film f
         JOIN Director d ON f.director_id = d.director_id
         ORDER BY f.film_name
@@ -24,7 +24,7 @@ def films():
 def screenings():
     conn = get_connection()
     screening_list = conn.execute("""
-        SELECT f.film_name, c.city, s.session_time
+         SELECT f.film_name, c.city, s.session_time
         FROM Screening s
         JOIN Film f   ON s.film_id = f.film_id
         JOIN Cinema c ON s.cinema_id = c.cinema_id
@@ -58,5 +58,57 @@ def popular():
 @app.route("/about")
 def about():
     return render_template("about.html")
+@app.route("/add_film", methods=["GET", "POST"])
+def add_film():
+    conn = get_connection()
+    if request.method == "POST":
+        film_id = request.form["film_id"]
+        film_name = request.form["film_name"]
+        genre = request.form["genre"]
+        director_id = request.form["director_id"]
+        conn.execute(
+            "INSERT INTO Film (film_id, film_name, genre, director_id) VALUES (?, ?, ?, ?)",
+            (film_id, film_name, genre, director_id)
+        )
+        conn.commit()
+        conn.close()
+        return redirect("/films")
+    directors = conn.execute("SELECT director_id, director_name FROM Director ORDER BY director_name").fetchall()
+    conn.close()
+    return render_template("add_film.html", directors=directors)
+@app.route("/edit_film/<film_id>", methods=["GET", "POST"])
+def edit_film(film_id):
+    conn = get_connection()
+    if request.method == "POST":
+        film_name = request.form["film_name"]
+        genre = request.form["genre"]
+        director_id = request.form["director_id"]
+        conn.execute(
+            "UPDATE Film SET film_name = ?, genre = ?, director_id = ? WHERE film_id = ?",
+            (film_name, genre, director_id, film_id)
+        )
+        conn.commit()
+        conn.close()
+        return redirect("/films")
+    film = conn.execute("SELECT * FROM Film WHERE film_id = ?", (film_id,)).fetchone()
+    directors = conn.execute("SELECT director_id, director_name FROM Director ORDER BY director_name").fetchall()
+    conn.close()
+    return render_template("edit_film.html", film=film, directors=directors)
+@app.route("/delete_film/<film_id>", methods=["GET", "POST"])
+def delete_film(film_id):
+    conn = get_connection()
+    film = conn.execute("SELECT * FROM Film WHERE film_id = ?", (film_id,)).fetchone()
+    if request.method == "POST":
+        try:
+            conn.execute("DELETE FROM Film WHERE film_id = ?", (film_id,))
+            conn.commit()
+            conn.close()
+            return redirect("/films")
+        except sqlite3.IntegrityError:
+            conn.close()
+            return render_template("delete_film.html", film=film,
+                error="This film can't be deleted — it still has screenings linked to it.")
+    conn.close()
+    return render_template("delete_film.html", film=film, error=None)
 if __name__ == "__main__":
     app.run(debug=True)

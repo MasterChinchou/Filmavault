@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Film</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% include "nav.html" %}
+    <h1>Edit Film</h1>
+    <form method="POST" action="/edit_film/{{ film.film_id }}">
+        <p>Film ID: {{ film.film_id }} (cannot be changed)</p>
+
+        <label>Film name:</label><br>
+        <input type="text" name="film_name" value="{{ film.film_name }}"><br><br>
+
+        <label>Genre:</label><br>
+        <input type="text" name="genre" value="{{ film.genre }}"><br><br>
+
+        <label>Director:</label><br>
+        <select name="director_id">
+            {% for d in directors %}
+                <option value="{{ d.director_id }}"
+                    {% if d.director_id == film.director_id %}selected{% endif %}>
+                    {{ d.director_name }}
+                </option>
+            {% endfor %}
+        </select><br><br>
+
+        <button type="submit">Save changes</button>
+    </form>
+</body>
+</html>
