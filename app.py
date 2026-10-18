@@ -1,5 +1,6 @@
 #Bring in the Flask tools: Flask (builds the app), render_template (shows an HTML page),
 #request (reads what the user sent), redirect (sends the user to another page).
+#import sqlite3 to talk to the database. The database file is in the same folder as this file.
 import sqlite3
 from flask import Flask, render_template, request, redirect
 #Create the web application. __name__ tells Flask where it is
@@ -8,7 +9,7 @@ app = Flask(__name__)
 #Reusable thing that opens a database connection set up the way we want it. Called at the start
 #of every route instead of repeating lines each time.
 def get_connection():
-    """Create and configure a SQLite database connection."""
+    """opens the database file and returns a connection object with our preferred settings"""
     #opens the database file
     conn = sqlite3.connect("Filmavault.db")
     #make SQLite enforce and use foreign keys
@@ -21,6 +22,7 @@ def get_connection():
 #runs when someone visits the main address "/"
 @app.route("/")
 def home():
+    """shows the home page with live counts of films, cinemas, and tickets"""
     conn = get_connection()
     #counts all rows in a table. fetchone() grabs the single result row and [0] takes the
     #first (only) value out of it.
@@ -37,6 +39,7 @@ def home():
 #Films list (with search)
 @app.route("/films")
 def films():
+    """shows a list of films, optionally filtered by a search term"""
     conn = get_connection()
     #Read the search term "q" from the URL (e.g. /films?q=action).
     #If it is not there, use "" instead. .strip() trims spaces.
@@ -70,6 +73,7 @@ def films():
 #Screenings list
 @app.route("/screenings")
 def screenings():
+    """shows a list of screenings with film name, city, and session time"""
     conn = get_connection()
     #Joins Screening to Film (for the title) and to Cinema (for the city).
     screening_list = conn.execute("""
@@ -84,6 +88,7 @@ def screenings():
 # Cinemas list
 @app.route("/cinemas")
 def cinemas():
+    """shows a list of cinemas with their city"""
     conn = get_connection()
     # Simplest query: one table, no join.
     cinema_list = conn.execute("""
@@ -96,11 +101,14 @@ def cinemas():
 # Bookings list (with search)
 @app.route("/bookings")
 def bookings():
+    """shows a list of bookings, optionally filtered by a search term"""
     conn = get_connection()
     # read the search term from the URL
     search = request.args.get("q", "").strip()
     if search:
-        # Five-table join: a Ticket links to its Viewer, its Screening, and from that screening to the Film and Cinema. This turns the stored IDs into readable names. Search matches first name, last name, the full name joined together (|| joins text), or film.
+        #Five-table join: a Ticket links to its Viewer, its Screening, and from that screening to the Film and Cinema. 
+        #This turns the stored IDs into readable names. 
+        #Search matches first name, last name, the full name joined together (|| joins text), or film.
         booking_list = conn.execute("""
             SELECT t.ticket_no, v.first_name, v.last_name,
                    f.film_name, c.city, s.session_time, t.seat_no
@@ -132,11 +140,13 @@ def bookings():
 #About page (static, no database)
 @app.route("/about")
 def about():
+    """shows the about page with information about the site"""
     return render_template("about.html")
 # Add a film (CREATE)
 # Accepts GET (show the form) and POST (submit the form).
 @app.route("/add_film", methods=["GET", "POST"])
 def add_film():
+    """shows a form to add a new film and saves it to the database"""
     conn = get_connection()
     # Get the director list for the dropdown. Fetched at the top so it is ready whether the page is being shown or submitted.
     directors = conn.execute("SELECT director_id, director_name FROM Director ORDER BY director_name").fetchall()
@@ -175,6 +185,7 @@ def add_film():
 # <film_id> is a variable part of the URL, like /edit_film/F007.
 @app.route("/edit_film/<film_id>", methods=["GET", "POST"])
 def edit_film(film_id):
+    """shows a form to edit an existing film and saves changes to the database"""
     conn = get_connection()
     # Fetch the one film being edited (so the form can be pre-filled) and the director list for the dropdown.
     film = conn.execute("SELECT * FROM Film WHERE film_id = ?", (film_id,)).fetchone()
@@ -189,7 +200,8 @@ def edit_film(film_id):
             conn.close()
             return render_template("edit_film.html", film=film, directors=directors,
                 error="All fields are required. Please fill in every box.")
-        # Update only the row whose film_id matches. The WHERE is vital because without it, every film would be overwritten.
+        #Update only the row whose film_id matches. 
+        #The WHERE is vital because without it, every film would be overwritten.
         conn.execute(
             "UPDATE Film SET film_name = ?, genre = ?, director_id = ? WHERE film_id = ?",
             (film_name, genre, director_id, film_id)
@@ -203,6 +215,7 @@ def edit_film(film_id):
 # Delete a film (DELETE)
 @app.route("/delete_film/<film_id>", methods=["GET", "POST"])
 def delete_film(film_id):
+    """shows a confirmation page to delete a film and deletes it if confirmed"""
     conn = get_connection()
     # Fetch the film so the confirmation page can show its name.
     film = conn.execute("SELECT * FROM Film WHERE film_id = ?", (film_id,)).fetchone()
@@ -224,8 +237,10 @@ def delete_film(film_id):
 #Most popular films
 @app.route("/popular")
 def popular():
+    """shows a list of films ordered by how many tickets have been sold for them"""
     conn = get_connection()
-    # Count how many tickets each film has. GROUP BY bundles all of one film's tickets together so COUNT counts per film; ORDER BY ... DESC puts the most popular first.
+    # Count how many tickets each film has. 
+    # GROUP BY bundles all of one film's tickets together so COUNT counts per film; ORDER BY ... DESC puts the most popular first.
     popular_list = conn.execute("""
         SELECT f.film_name, COUNT(t.ticket_no) AS tickets_sold
         FROM Ticket t
@@ -236,10 +251,13 @@ def popular():
     """).fetchall()
     conn.close()
     return render_template("popular.html", films=popular_list)
-# For ustom 404 (page not found) handler runs whenever a request has no matching route. This hows our own 404 page and still returns the correct 404 status code.
+# For ustom 404 (page not found) handler runs whenever a request has no matching route.
+# This hows our own 404 page and still returns the correct 404 status code.
 @app.errorhandler(404)
 def page_not_found(_error):
+    """shows a custom 404 page when the user visits a URL that doesn't exist"""
     return render_template("404.html"), 404
-# Start the web server only when this file is run directly. debug=True shows detailed errors and auto-reloads on save (useful while building; turn it off for a real public site).
+# Start the web server only when this file is run directly. 
+# debug=True shows detailed errors and auto-reloads on save (useful while building; turn it off for a real public site).
 if __name__ == "__main__":
     app.run(debug=True)
