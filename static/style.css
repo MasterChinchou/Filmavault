@@ -1,147 +1,206 @@
 /*Theme*/
 body {
+/* near-black page background */
     background-color: #0f0f0f;
+/* default text colour (light grey) */
     color: #e8e8e8;
     font-family: 'Segoe UI', Arial, sans-serif;
+/* font; falls back Arial → any sans-serif */
     margin: 0;
+/* remove the browser's default outer spacing */
     line-height: 1.6;
+/* space between lines of text, for readability */
 }
-/*Navigation*/
+/*Navigation bar*/
 nav {
+/* lay children in a row (enables the next two lines) */
     display: flex;
+/* push links to the far left, logo to the far right */
     justify-content: space-between;
+/* line children up vertically in the middle */
     align-items: center;
+/* dark bar */
     background-color: #1a1a1a;
+/* space inside the bar: 10px top/bottom, 20px left/right */
     padding: 10px 20px;
+/* gold line under the bar */
     border-bottom: 2px solid #c9a227;
 }
+/* the links inside the nav */
 nav a {
+/* gold text */
     color: #c9a227;
+/* remove the default underline */
     text-decoration: none;
     font-weight: bold;
+/* small gap left and right of each link */
     margin: 0 6px;
 }
+/* when the mouse is over a nav link */
 nav a:hover {
+    /* brighter gold */
     color: #f0d070;
+/* underline reappears on hover */
     text-decoration: underline;
 }
+/* Horizontal rule (the <hr> after the nav)*/
 hr {
+/* hide the default line (the nav already has a gold edge) */
     border: none;
+/* no extra spacing */
     margin: 0;
 }
 /*Headings*/
+/* applies to both h1 and h2 */
 h1, h2 {
+/* gold headings */
     color: #c9a227;
+/* serif font for an elegant look */
     font-family: Georgia, 'Times New Roman', serif;
 }
+/* space around every h1 */
 h1 { margin: 25px; }
+/* top 20, left/right 25, bottom 10 */
 h2 { margin: 20px 25px 10px; }
-/*Spacings*/
+/*Content spacing (keeps body text off the edges)*/
+/* paragraphs, forms, lists and images */
 p, form, ul, img {
     margin-left: 25px;
     margin-right: 25px;
 }
 /*Tables*/
 table {
+/* merge cell borders into single lines */
     border-collapse: collapse;
+/* full width minus 25px each side (matches the margins) */
     width: calc(100% - 50px);
+/* top 15, left/right 25, bottom 25 */
     margin: 15px 25px 25px;
+/* dark table background */
     background-color: #1a1a1a;
 }
-th {
-    background-color: #c9a227;
-    color: #0f0f0f;
-    padding: 10px;
-    text-align: left;
-}
+/* normal table cells */
 td {
+/* thin dark border */
     border: 1px solid #333;
     padding: 10px;
     color: #e8e8e8;
 }
+/* cells in every EVEN row */
 tr:nth-child(even) td {
+/* slightly different shade = alternating row stripes */
     background-color: #161616;
 }
 /*Links*/
 a {
+/* gold links */
     color: #c9a227;
 }
 a:hover {
+/* brighter gold on hover */
     color: #f0d070;
 }
 /*Form inputs*/
+/* text inputs AND <select> dropdowns */
 input[type="text"], select {
     background-color: #1a1a1a;
+/* gold outline */
     border: 1px solid #c9a227;
     color: #e8e8e8;
+/* space inside the box */
     padding: 8px;
+/* slightly rounded corners */
     border-radius: 4px;
 }
 /*Buttons*/
+/* button and submit buttons */
 button, input[type="submit"] {
+/* gold button */
     background-color: #c9a227;
+/* dark text */
     color: #0f0f0f;
+/* remove the default border */
     border: none;
     padding: 8px 16px;
     font-weight: bold;
+/* rounded corners */
     border-radius: 4px;
+/* show the hand cursor on hover */
     cursor: pointer;
 }
 button:hover, input[type="submit"]:hover {
+/* brighter gold when hovered */
     background-color: #f0d070;
 }
+/*Logo (image + "FilmaVault" text in the nav)*/
 .logo {
+/* image and text sit in a row */
     display: flex;
+/* line them up vertically */
     align-items: center;
+/* space between the image and the word */
     gap: 10px;
     color: #c9a227;
     font-family: Georgia, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 20px;
+/* no underline on the logo link */
     text-decoration: none;
 }
-/*Home page hero*/
+/*Home page hero (the welcome area)*/
 .hero {
+/* centre the heading and tagline */
     text-align: center;
+/* generous space, especially on top */
     padding: 55px 20px 25px;
 }
-
 .hero h1 {
+/* big welcome heading */
     font-size: 48px;
+/* only a little space under it */
     margin: 0 0 10px;
 }
-
 .hero p {
+/* muted grey tagline */
     color: #bbb;
     font-size: 18px;
     margin: 0;
 }
-
-/*Stat cards*/
+/*Home page stat cards*/
 .stats {
+/* the three cards sit in a row */
     display: flex;
+/* centre the row on the page */
     justify-content: center;
+/* space between the cards */
     gap: 25px;
+/* let cards drop to a new line on a narrow screen */
     flex-wrap: wrap;
     margin: 30px 25px;
 }
-
+/* each individual card */
 .stat-card {
     background-color: #1a1a1a;
+/* gold outline */
     border: 1px solid #c9a227;
+/* rounded corners */
     border-radius: 8px;
+/* space inside the card */
     padding: 30px 40px;
+/* centre the number and label */
     text-align: center;
+/* stop cards getting too narrow */
     min-width: 160px;
 }
-
+/* the big figure, e.g. 350 */
 .stat-number {
     font-size: 44px;
     font-weight: bold;
+/* gold */
     color: #c9a227;
     font-family: Georgia, 'Times New Roman', serif;
 }
-
+/* the small text under the number */
 .stat-label {
     color: #ddd;
     margin-top: 8px;
