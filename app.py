@@ -227,9 +227,9 @@ def popular():
     """).fetchall()
     conn.close()
     return render_template("popular.html", films=popular_list)
-# For ustom 404 (page not found) handler runs whenever a request has no matching route. Shows our own 404 page and still returns the correct 404 status code.
+# For ustom 404 (page not found) handler runs whenever a request has no matching route. This hows our own 404 page and still returns the correct 404 status code.
 @app.errorhandler(404)
-def page_not_found(e):
+def page_not_found(error):
     return render_template("404.html"), 404
 # Start the web server only when this file is run directly. debug=True shows detailed errors and auto-reloads on save (useful while building; turn it off for a real public site).
 if __name__ == "__main__":
