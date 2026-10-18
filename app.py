@@ -8,20 +8,22 @@ app = Flask(__name__)
 #Reusable thing that opens a database connection set up the way we want it. Called at the start
 #of every route instead of repeating lines each time.
 def get_connection():
+    """Create and configure a SQLite database connection."""
     #opens the database file
     conn = sqlite3.connect("Filmavault.db")
-    #make SQLite enforce and use foreign keys    
+    #make SQLite enforce and use foreign keys
     conn.execute("PRAGMA foreign_keys = ON")
     #let us read columns by name, e.g. row of "film_name"
     conn.row_factory = sqlite3.Row
-    #hand the connection back to the caller          
+    #hand the connection back to the caller
     return conn
 #Home page (dashboard with live totals=stat cards)
 #runs when someone visits the main address "/"
 @app.route("/")
 def home():
     conn = get_connection()
-    #counts all rows in a table. fetchone() grabs the single result row and [0] takes the first (only) value out of it.
+    #counts all rows in a table. fetchone() grabs the single result row and [0] takes the
+    #first (only) value out of it.
     film_count = conn.execute("SELECT COUNT(*) FROM Film").fetchone()[0]
     cinema_count = conn.execute("SELECT COUNT(*) FROM Cinema").fetchone()[0]
     ticket_count = conn.execute("SELECT COUNT(*) FROM Ticket").fetchone()[0]
@@ -36,19 +38,25 @@ def home():
 @app.route("/films")
 def films():
     conn = get_connection()
-    # Read the search term "q" from the URL (e.g. /films?q=action).
-    # If it is not there, use "" instead. .strip() trims spaces.
+    #Read the search term "q" from the URL (e.g. /films?q=action).
+    #If it is not there, use "" instead. .strip() trims spaces.
     search = request.args.get("q", "").strip()
-    if search: 
-        # Join Film to Director to get the director's name, and only keep films whose name OR genre contains the search text. The ? marks are filled safely by the values in the tuple below, which prevents SQL injection. The % are wildcards meaning "any characters", so the match is partial.
+    if search:
+        #Join Film to Director to get the director's name, and only keep films whose
+        #name OR genre contains the search text. The ? marks are filled safely by the
+        #values in the tuple below, which prevents SQL injection. The % are wildcards
+        #meaning "any characters", so the match is partial.
         film_list = conn.execute("""
             SELECT f.film_id, f.film_name, f.genre, d.director_name
             FROM Film f
             JOIN Director d ON f.director_id = d.director_id
             WHERE f.film_name LIKE ? OR f.genre LIKE ?
             ORDER BY f.film_name
-        """, ('%' + search + '%', '%' + search + '%')).fetchall()
-    # if no search: show every film
+        """, (
+            "%" + search + "%",
+            "%" + search + "%",
+        )).fetchall()
+    #if no search then show every film
     else:
         film_list = conn.execute("""
             SELECT f.film_id, f.film_name, f.genre, d.director_name
@@ -57,13 +65,13 @@ def films():
             ORDER BY f.film_name
         """).fetchall()
     conn.close()
-    # Pass the films and the search term this makes the box keeps what was typed).
+    #Pass the films and the search term this makes the box keeps what was typed.
     return render_template("films.html", films=film_list, search=search)
-# Screenings list
+#Screenings list
 @app.route("/screenings")
 def screenings():
     conn = get_connection()
-    # Joins Screening to Film (for the title) and to Cinema (for the city).
+    #Joins Screening to Film (for the title) and to Cinema (for the city).
     screening_list = conn.execute("""
          SELECT f.film_name, c.city, s.session_time
         FROM Screening s
