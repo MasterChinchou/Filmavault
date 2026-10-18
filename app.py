@@ -1,32 +1,33 @@
-# Bring in the Flask tools: Flask (builds the app), render_template (shows an HTML page), request (reads what the user sent), redirect (sends the user to another page).
-from flask import Flask, render_template, request, redirect
-# Bring in sqlite3 so Python can talk to the database.
+#Bring in the Flask tools: Flask (builds the app), render_template (shows an HTML page),
+#request (reads what the user sent), redirect (sends the user to another page).
 import sqlite3
-# Create the web application. __name__ tells Flask where it is
-# From here on, "app" is the website.
+from flask import Flask, render_template, request, redirect
+#Create the web application. __name__ tells Flask where it is
+#From here on, "app" is the website.
 app = Flask(__name__)
-# Reusable thing that opens a database connection set up the way we want it. Called at the start of every route instead of repeating lines each time.
+#Reusable thing that opens a database connection set up the way we want it. Called at the start
+#of every route instead of repeating lines each time.
 def get_connection():
-    # opens the database file
+    #opens the database file
     conn = sqlite3.connect("Filmavault.db")
-    # make SQLite enforce and use foreign keys    
+    #make SQLite enforce and use foreign keys    
     conn.execute("PRAGMA foreign_keys = ON")
-    # let us read columns by name, e.g. row of "film_name"
+    #let us read columns by name, e.g. row of "film_name"
     conn.row_factory = sqlite3.Row
-    # hand the connection back to the caller          
+    #hand the connection back to the caller          
     return conn
-# Home page (dashboard with live totals=stat cards)
-# runs when someone visits the main address "/"
+#Home page (dashboard with live totals=stat cards)
+#runs when someone visits the main address "/"
 @app.route("/")
 def home():
     conn = get_connection()
-    # counts all rows in a table. fetchone() grabs the single result row and [0] takes the first (only) value out of it.
+    #counts all rows in a table. fetchone() grabs the single result row and [0] takes the first (only) value out of it.
     film_count = conn.execute("SELECT COUNT(*) FROM Film").fetchone()[0]
     cinema_count = conn.execute("SELECT COUNT(*) FROM Cinema").fetchone()[0]
     ticket_count = conn.execute("SELECT COUNT(*) FROM Ticket").fetchone()[0]
-    # always close the connection when done
+    #always close the connection when done
     conn.close()
-    # Shows home.html and pass the three counts so the page can display them.
+    #Shows home.html and pass the three counts so the page can display them.
     return render_template("home.html",
         film_count=film_count,
         cinema_count=cinema_count,
